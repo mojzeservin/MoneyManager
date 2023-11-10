@@ -1,1 +1,1 @@
-moneymanagerme.atlassain.net
+https://moneymanagerme.atlassian.net/
