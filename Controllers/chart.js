@@ -1,4 +1,3 @@
-
 function showChart(){
     let labels = [];
     let datas = [];

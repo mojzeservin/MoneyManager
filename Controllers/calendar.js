@@ -1,10 +1,9 @@
-
 function showCalendar(){
     let myEvents = [];
-    axios.get(`${serverURL}/steps/userID/eq/${loggedUser.ID}`).then(res=>{
+    axios.get(`${serverURL}/items/userID/eq/${loggedUser.ID}`).then(res=>{
         res.data.forEach(item => {
             myEvents.push({
-                title: item.steps,
+                title: item.amount,
                 start: item.date,
                 allDay: true,
                 backgroundColor: '#336c56',

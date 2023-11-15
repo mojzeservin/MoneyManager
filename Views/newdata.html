@@ -9,10 +9,11 @@
     <label for="date">Dátum</label>
 </div>
 
-<div class="form-floating mb-3">
-    <input type="text" class="form-control" id="type" placeholder="" >
-    <label for="type">Bevétel vagy kiadás</label>
-</div>
+<select class="form-select mb-3" id="type">
+    <option selected>+/-</option>
+    <option value="1">Bevétel</option>
+    <option value="2">Kiadás</option>
+  </select>
 
 <div class="form-floating mb-3">
     <input type="number" class="form-control" id="amount" placeholder="" min="0" value="0">
