@@ -2,12 +2,19 @@ function showCalendar(){
     let myEvents = [];
     axios.get(`${serverURL}/items/userID/eq/${loggedUser.ID}`).then(res=>{
         res.data.forEach(item => {
+            let color;
+            if (item.type==1) {
+                color = "Green";
+            }else{
+                color="Red";
+            }
             myEvents.push({
+
                 title: item.amount,
                 start: item.date,
                 allDay: true,
-                backgroundColor: '#336c56',
-                borderColor: '#336c56',
+                backgroundColor: color,
+                borderColor: color,
             })
         });
     });

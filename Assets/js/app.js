@@ -20,7 +20,7 @@ let loggedUser = JSON.parse(sessionStorage.getItem('stepCounterAppUser'));
 if (loggedUser != null){
     loggedOutMenu.classList.add('d-none');
     loggedInMenu.classList.remove('d-none');
-    render('newdata');
+    render('balance');
 }
 else
 {
